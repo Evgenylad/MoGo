@@ -1,0 +1,24 @@
+.header-slogan {
+    position: relative;
+    width: 42%;
+    height: auto;
+
+    margin: 0 auto;
+    margin-bottom: 130px;
+    &__img {
+      width: 100%;
+      height: auto;
+    }
+    &:after {
+      position: absolute;
+      content: "";
+      width: 58px;
+      height: 3px;
+
+      bottom: -70px;
+      left: 50%;
+
+      background-color: #ffffff;
+      transform: translateX(-50%);
+    }
+}

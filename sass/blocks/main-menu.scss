@@ -1,0 +1,43 @@
+.main-menu {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+  &__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    list-style: none;
+  }
+  &__item {
+    display: inline-block;
+    &--cart {
+
+    }
+    &--search {
+
+    }
+  }
+  &__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    &:hover {
+      padding-bottom: 8px;
+
+      text-decoration: none;
+      color: #fce38a;
+      border-bottom: 3px solid #fce38a;
+    }
+  }
+  &__img {
+    width: 23px;
+    height: 17px;
+
+    fill: #ffffff;
+  }
+}
+
+.main-menu__link:hover > .main-menu__img {
+  fill: #fce38a;
+}

@@ -1,0 +1,25 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: (1200/1920)*100%;
+  margin: 0 auto;
+
+  margin-bottom: 165px;
+  padding-top: 20px;
+  &__item {
+    width: 40%;
+    text-align: left;
+  }
+  &__link {
+    color: #ffffff;
+    font-family: $font-bold;
+    font-size: 30px;
+    &:hover {
+      padding-bottom: 8px;
+
+      text-decoration: none;
+      color: #fce38a;
+      border-bottom: 3px solid #fce38a;
+    }
+  }
+}
