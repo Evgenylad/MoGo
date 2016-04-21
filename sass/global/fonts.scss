@@ -8,7 +8,7 @@
 
 @font-face {
   font-weight: bold;
-  font-style: bold;
+  font-style: normal;
 
   font-family: "Montserrat Bold";
   src: url("../fonts/Montserrat-Bold.woff") format("woff");
@@ -20,4 +20,12 @@
 
   font-family: "Kaushan Script";
   src: url("../fonts/KaushanScript-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "Roboto Regular";
+  src: url("../fonts/Roboto-Regular.woff") format("woff");
 }

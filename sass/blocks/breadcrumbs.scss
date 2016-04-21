@@ -21,7 +21,7 @@
       position: relative;
       color: #ffffff;
       border-top: 3px solid #ffffff;
-      &:before {
+      &::before {
         content: "";
         position: absolute;
         top: -3px;
@@ -30,7 +30,7 @@
         width: 70px;
         height: 3px;
 
-        background-color: $secondary-color;
+        background-color: $secondary-btn-background-active;
 
       }
     }

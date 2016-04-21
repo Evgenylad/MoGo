@@ -9,7 +9,7 @@
       width: 100%;
       height: auto;
     }
-    &:after {
+    &::after {
       position: absolute;
       content: "";
       width: 58px;
