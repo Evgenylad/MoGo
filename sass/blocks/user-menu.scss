@@ -1,0 +1,31 @@
+.user-menu {
+  display: flex;
+  justify-content: space-around;
+  width: 80px;
+
+  padding-left: 0;
+  &__item {
+    display: inline-block;
+    width: 40px;
+    &--cart {
+
+    }
+    &--search {
+
+    }
+  }
+  &__link {
+    color: #ffffff;
+    &:hover {
+      padding-bottom: 8px;
+      color: #fce38a;
+      border-bottom: 3px solid #fce38a;
+    }
+  }
+  &__img {
+    width: 23px;
+    height: 17px;
+
+    fill: #ffffff;
+  }
+}

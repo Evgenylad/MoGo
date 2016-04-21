@@ -1,9 +1,9 @@
 .main-menu {
-  width: 60%;
+  width: 620px;
   display: flex;
   justify-content: flex-end;
   &__list {
-    width: 100%;
+    width: 540px;
     display: flex;
     justify-content: space-around;
 
@@ -11,12 +11,7 @@
   }
   &__item {
     display: inline-block;
-    &--cart {
-
-    }
-    &--search {
-
-    }
+    width: calc(540px/5);
   }
   &__link {
     text-transform: uppercase;
@@ -29,12 +24,6 @@
       color: #fce38a;
       border-bottom: 3px solid #fce38a;
     }
-  }
-  &__img {
-    width: 23px;
-    height: 17px;
-
-    fill: #ffffff;
   }
 }
 

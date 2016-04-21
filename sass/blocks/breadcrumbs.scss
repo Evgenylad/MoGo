@@ -1,0 +1,45 @@
+.breadcrumbs {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+
+  margin: 0 auto;
+  &__item {
+    display: flex;
+    align-items: center;
+    width: 280px;
+    height: 74px;
+
+    color: #dadbdf;
+    text-align: left;
+
+    border-top: 3px solid #dadbdf;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+    &--active {
+      position: relative;
+      color: #ffffff;
+      border-top: 3px solid #ffffff;
+      &:before {
+        content: "";
+        position: absolute;
+        top: -3px;
+        left: 0;
+
+        width: 70px;
+        height: 3px;
+
+        background-color: $secondary-color;
+
+      }
+    }
+  }
+  &__number {
+    font-size: 24px;
+  }
+  &__name {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}
