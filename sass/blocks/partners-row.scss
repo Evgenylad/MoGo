@@ -1,0 +1,13 @@
+.partners-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%auto;
+  height: 250px;
+
+  background-color: $secondary-background;
+  &__image {
+    width: 1200px;
+    height: auto;
+  }
+}

@@ -2,4 +2,73 @@
   height: 1050px;
 
   padding-top: 100px;
+  &__images {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+
+    margin: 0 auto;
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+  }
+  &__img-container {
+    position: relative;
+    width: 380px;
+    height: 470px;
+
+    margin-bottom: 30px;
+
+    background-color: $base-btn-background;
+  }
+  &__img {
+    width: 380px;
+    height: 470px;
+    &--translation {
+      position: absolute;
+      left: -10px;
+      top: -10px;
+    }
+  }
+  &__name {
+    margin-bottom: 10px;
+
+    color: $base-header-color;
+  }
+  &__prof {
+    font-size: 15px;
+    line-height: 24px;
+    font-family: $alternative-font-lightitalic;
+    color: #b6b6b6;
+  }
+  &__social-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+
+    width: 380px;
+    height: 470px;
+
+    font-family: $font-bold;
+    font-size: 24px;
+    line-height: 305px;
+    color: #ffffff;
+    background-image: linear-gradient(to top, rgba(252,227,138,0.9), rgba(243,129,129,0.9));
+    z-index: 10;
+  }
+}
+
+.team-row__social-wrapper:hover {
+  background-image: none;
+}
+
+.team-row__social-wrapper:hover ~ .team-row__img-container > .team-row__img--translation {
+  left: 0;
+  top: 0;
 }

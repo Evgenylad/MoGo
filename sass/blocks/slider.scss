@@ -32,18 +32,22 @@
       width: 152px;
       height: 152px;
 
-      background: url("../img/icons/speech4.svg") no-repeat center;
+      background-image: url("../img/icons/speech4.svg");
+      background-repeat: no-repeat;
+      background-position: center;
       border: 3px solid $base-btn-background;
       z-index: 1;
     }
     &--slide2 {
       &::before {
-        border: 3px solid red;
+        border: 3px solid #fce38a;
+        background-image: url("../img/icons/speech4_yellow.svg");
       }
     }
     &--slide3 {
       &::before {
-        border: 3px solid blue;
+        background-image: url("../img/icons/speech4_red.svg");
+        border: 3px solid #f38181;
       }
     }
   }

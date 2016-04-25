@@ -1,0 +1,27 @@
+.social-block {
+  display: flex;
+  width: 224px;
+  height: 56px;
+  &__btn {
+    display: flex;
+    width: 56px;
+    height: 56px;
+    background-color: $secondary-btn-background;
+    border-left: 1px solid #f9bd87;
+    &:hover {
+      background-color: $secondary-btn-background-active;
+    }
+  }
+  &__image {
+    width: 26px;
+    height: 26px;
+
+    margin-top: 14px;
+    margin-left: 14px;
+    fill: $secondary-color;
+  }
+}
+
+.social-block__btn:hover .social-block__image {
+  fill: $base-background;
+}
