@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MoGo</title>
+  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
   <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/jquery.scrollbar.css" rel="stylesheet">
 </head>
 <body>
   <svg style="display: none">
@@ -33,7 +35,7 @@
   <symbol viewBox="0 0 16 13" id="twitter"><title>twitter</title><path d="M10.883.016c1.271-.023 1.948.441 2.594 1.029.549-.047 1.262-.353 1.682-.566l.409-.224c-.24.649-.566 1.156-1.066 1.541-.11.086-.221.201-.36.256v.007c.712-.007 1.3-.328 1.858-.502v.008c-.293.466-.69.938-1.113 1.277l-.513.407c.01.755-.011 1.474-.152 2.108-.82 3.685-2.992 6.186-6.43 7.257-1.235.385-3.23.544-4.645.192a11.997 11.997 0 0 1-1.93-.631c-.33-.144-.636-.3-.929-.479A44.503 44.503 0 0 1 0 11.52c.319.01.692.098 1.049.04.323-.052.639-.038.937-.103.742-.163 1.402-.378 1.97-.711.275-.161.693-.35.889-.582a2.792 2.792 0 0 1-.977-.176c-1.062-.375-1.68-1.065-2.082-2.1.322.035 1.248.119 1.465-.064-.405-.022-.794-.257-1.073-.431C1.324 6.859.627 5.962.633 4.582l.336.16c.214.091.433.139.689.192.108.022.324.086.448.039H2.09c-.165-.191-.435-.32-.601-.526C.941 3.765.428 2.717.753 1.469c.082-.317.213-.596.352-.854a.12.12 0 0 1 .016.008c.064.133.206.231.296.343.28.347.626.659.977.934 1.199.937 2.279 1.514 4.012 1.94.44.108.949.19 1.474.192-.148-.43-.1-1.126.016-1.541.292-1.046.927-1.8 1.858-2.204.222-.096.469-.167.728-.223l.401-.048z" class="cls-1"/></symbol>
   <symbol viewBox="0 0 16 11" id="youtube"><title>youtube</title><path d="M13.537-.007L8.312-.012l-5.429.005C1.525-.007 0 .899 0 2.229v6.618c0 1.329 1.525 2.14 2.883 2.14h10.654c1.359 0 2.459-.811 2.459-2.14V2.229c0-1.33-1.1-2.236-2.459-2.236zM6.964 8.036l-.032-5.04 3.508 2.542-3.476 2.498z" class="cls-1"/></symbol>
   </svg>
-  <div class="container-fluid">
+  <div class="site-wrapper">
     <header class="main-header">
       <div class="main-nav">
         <div class="main-nav__item">
@@ -123,7 +125,7 @@
       </div>
     </header>
 
-    <main class="container">
+    <main class="content-container">
       <div class="introduction-row">
         <section class="intro-block">
           <span class="intro-block__item">What we do</span>
@@ -150,29 +152,29 @@
       </div>
 
       <div class="feauters-row">
-        <div class="feauters__item">
-          <span class="feauters__count">42</span>
-          <span class="feauters__name">Web Design Projects</span>
+        <div class="feauters-row__item">
+          <span class="feauters-row__count">42</span>
+          <span class="feauters-row__name">Web Design Projects</span>
         </div>
 
-        <div class="feauters__item">
-          <span class="feauters__count">123</span>
-          <span class="feauters__name">happy client</span>
+        <div class="feauters-row__item">
+          <span class="feauters-row__count">123</span>
+          <span class="feauters-row__name">happy client</span>
         </div>
 
-        <div class="feauters__item">
-          <span class="feauters__count">15</span>
-          <span class="feauters__name">award winner</span>
+        <div class="feauters-row__item">
+          <span class="feauters-row__count">15</span>
+          <span class="feauters-row__name">award winner</span>
         </div>
 
-        <div class="feauters__item">
-          <span class="feauters__count">99</span>
-          <span class="feauters__name">cup of coffee</span>
+        <div class="feauters-row__item">
+          <span class="feauters-row__count">99</span>
+          <span class="feauters-row__name">cup of coffee</span>
         </div>
 
-        <div class="feauters__item">
-          <span class="feauters__count">24</span>
-          <span class="feauters__name">members</span>
+        <div class="feauters-row__item">
+          <span class="feauters-row__count">24</span>
+          <span class="feauters-row__name">members</span>
         </div>
       </div>
 
@@ -183,34 +185,36 @@
         </section>
 
         <div class="services-row__group">
-          <div class="servces__item">
-            <h3 class="servces__header">Photography</h3>
-            <p class="services__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          <div class="services-row__item  services-row__item--first">
+            <h3 class="services-row__header">Photography</h3>
+            <p class="services-row__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           </div>
 
-          <div class="servces-row__item">
-            <h3 class="servces__header">Web Design</h3>
-            <p class="services__description">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          <div class="services-row__item  services-row__item--second">
+            <h3 class="services-row__header">Web Design</h3>
+            <p class="services-row__description">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           </div>
 
-          <div class="servces__item">
-            <h3 class="servces__header">Creativity</h3>
-            <p class="services__description">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          <div class="services-row__item  services-row__item--third">
+            <h3 class="services-row__header">Creativity</h3>
+            <p class="services-row__description">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           </div>
 
-          <div class="servces__item">
-            <h3 class="servces__header">SEO</h3>
-            <p class="services__description">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+          <hr class="services-row__divider">
+
+          <div class="services-row__item  services-row__item--fourth">
+            <h3 class="services-row__header">SEO</h3>
+            <p class="services-row__description">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
           </div>
 
-          <div class="servces__item">
-            <h3 class="servces__header">Css/Html</h3>
-            <p class="services__description">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.</p>
+          <div class="services-row__item  services-row__item--fifth">
+            <h3 class="services-row__header">Css/Html</h3>
+            <p class="services-row__description">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.</p>
           </div>
 
-          <div class="servces__item">
-            <h3 class="servces__header">digital</h3>
-            <p class="services__description">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          <div class="services-row__item  services-row__item--sixth">
+            <h3 class="services-row__header">digital</h3>
+            <p class="services-row__description">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           </div>
         </div>
       </div>
@@ -220,44 +224,110 @@
           <span class="intro-block__item">For all devices</span>
           <h1 class="intro-block__header">Unique design</h1>
         </section>
-        <img src="" alt="Tablet" class="adaptivedesign-row__image-tablet">
-        <img src="" alt="Phone" class="adaptivedesign-row__image-mobile">
+        <img class="adaptivedesign-row__image-tablet" src="img/tablet.png" alt="Tablet" width="477" height="713">
+        <img class="adaptivedesign-row__image-mobile" src="img/mobile-phone.png" alt="Phone" width="274" height="476">
       </div>
 
       <div class="services-repeat-row">
         <section class="intro-block">
           <span class="intro-block__item">We work with</span>
           <h1 class="intro-block__header">Amazing Services</h1>
+          <p class="intro-block__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </section>
 
         <div class="services-repeat-row__group">
-          <img src="" alt="" class="div services-repeat-row__image">
+          <img class="services-repeat-row__image" src="img/services-small.jpg" width="570" height="380" alt="Services">
 
           <div class="services-repeat-row__tabs">
             <div class="services-repeat-row__tab">
-              <h3 class="services-repeat-row__header">Photography</h3>
-              <p class="services-repeat-row__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <input type="radio" class="services-repeat-row__input" name="tab" id="tab1" checked hidden>
+              <label class="services-repeat-row__label  services-repeat-row__label--tab1" for="tab1">Photography</label>
+
+              <div class="services-repeat-row__description">
+                <div class="scrollbar-inner">
+                  <div class="services-repeat-row__tab-wrapper">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div class="services-repeat-row__tab">
-              <h3 class="services-repeat-row__header">creativity</h3>
-              <p class="services-repeat-row__description"></p>
+              <input type="radio" class="services-repeat-row__input" name="tab" id="tab2" hidden>
+              <label class="services-repeat-row__label  services-repeat-row__label--tab2" for="tab2">creativity</label>
+
+              <div class="services-repeat-row__description">
+                <div class="scrollbar-inner">
+                  <div class="services-repeat-row__tab-wrapper">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div class="services-repeat-row__tab">
-              <h3 class="services-repeat-row__header">web design</h3>
-              <p class="services-repeat-row__description"></p>
+              <input type="radio" class="services-repeat-row__input" name="tab" id="tab3" hidden>
+              <label class="services-repeat-row__label  services-repeat-row__label--tab3" for="tab3">web design</label>
+
+              <div class="services-repeat-row__description">
+                <div class="scrollbar-inner">
+                  <div class="services-repeat-row__tab-wrapper">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="slider  slirer--first">
-        <div class="slide">
-          <p class="slide__description"></p>
-          <span class="slide__author"></span>
+      <div class="slider  slider--first">
+        <div class="slider__slides" id="slides">
+          <input class="slider__input--slide1" type="radio" name="radio" id="radio1" checked hidden>
+          <input class="slider__input--slide2" type="radio" name="radio" id="radio2" hidden>
+          <input class="slider__input--slide3" type="radio" name="radio" id="radio3" hidden>
+
+          <label class="slider__control  slider__control--left" for="radio1"></label>
+          <label class="slider__control  slider__control--left" for="radio2"></label>
+          <label class="slider__control  slider__control--left" for="radio3"></label>
+          <label class="slider__control  slider__control--right" for="radio1"></label>
+          <label class="slider__control  slider__control--right" for="radio2"></label>
+          <label class="slider__control  slider__control--right" for="radio3"></label>
+
+          <div class="slider__slide  slider__slide--slide1" id="slide1">
+            <p class="slider__description">“Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+            <span class="slider__author">Jon Doe1</span>
+          </div>
+
+          <div class="slider__slide  slider__slide--slide2" id="slide2">
+            <p class="slider__description">“Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+            <span class="slider__author">Jon Doe2</span>
+          </div>
+
+          <div class="slider__slide  slider__slide--slide3" id="slide3">
+            <p class="slider__description">“Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+            <span class="slider__author">Jon Doe3</span>
+          </div>
         </div>
       </div>
+
 
       <div class="team-row">
         <section class="intro-block">
@@ -617,5 +687,11 @@
     </footer>
   </div>
 
+  <script src="js/jquery.scrollbar.min.js"></script>
+  <script>
+  jQuery(document).ready(function(){
+      jQuery('.scrollbar-inner').scrollbar();
+  });
+  </script>
 </body>
 </html>

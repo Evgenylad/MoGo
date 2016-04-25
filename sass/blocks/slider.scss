@@ -1,0 +1,133 @@
+.slider {
+  width: 1920px;
+  height: 290px;
+
+  padding-top: 70px;
+
+  background-color: #f8f8f8;
+
+  &__slides {
+    position: relative;
+    display: flex;
+    width: 1200px;
+
+    margin: 0 auto;
+  }
+
+  &__slide {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    padding-left: 310px;
+    padding-right: 80px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 109px;
+
+      width: 152px;
+      height: 152px;
+
+      background: url("../img/icons/speech4.svg") no-repeat center;
+      border: 3px solid $base-btn-background;
+      z-index: 1;
+    }
+    &--slide2 {
+      &::before {
+        border: 3px solid red;
+      }
+    }
+    &--slide3 {
+      &::before {
+        border: 3px solid blue;
+      }
+    }
+  }
+
+  &__control {
+    display: none;
+    position: absolute;
+    content: "";
+    top: 64px;
+
+    width: 20px;
+    height: 27px;
+
+    cursor: pointer;
+    z-index: 2;
+    &--left {
+      left: 20px;
+      background: url("../img/icons/arrow_left.png") no-repeat;
+    }
+    &--right {
+      right: 20px;
+      background: url("../img/icons/arrow_right.png") no-repeat;
+    }
+  }
+
+  &__description {
+    width: 770px;
+    text-align: left;
+    font-family: $alternative-font-lightitalic;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  &__author {
+    position: relative;
+    display: block;
+
+    padding-left: 70px;
+
+    color: $base-header-color;
+    font-family: $font-italic;
+    font-size: 24px;
+    text-align: left;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+
+      width: 60px;
+      height: 3px;
+
+      background-color: $secondary-btn-background-active;
+    }
+  }
+}
+
+
+#radio1:checked ~ #slide1 {
+  display: block;
+  animation: moving-left 3s;
+}
+
+#radio2:checked ~ #slide2 {
+  display: block;
+  animation: moving-left 3s;
+}
+
+#radio3:checked ~ #slide3 {
+  display: block;
+  animation: moving-left 3s;
+}
+
+#radio1:checked ~ .slider__control:nth-of-type(3),
+#radio1:checked ~ .slider__control:nth-of-type(5) {
+  display: block;
+}
+
+#radio2:checked ~ .slider__control:nth-of-type(1),
+#radio2:checked ~ .slider__control:nth-of-type(6) {
+  display: block;
+}
+
+#radio3:checked ~ .slider__control:nth-of-type(2),
+#radio3:checked ~ .slider__control:nth-of-type(4) {
+  display: block;
+}

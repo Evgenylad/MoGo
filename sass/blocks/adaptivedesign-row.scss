@@ -1,0 +1,30 @@
+.adaptivedesign-row {
+  position: relative;
+  width: 100%;
+  height: 850px;
+
+  padding-top: 105px;
+
+  background-image: linear-gradient(to top, rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url("../img/adaptive_bg.jpg");
+
+  &__image-tablet {
+    display: block;
+
+    width: 477px;
+    height: 713px;
+
+    margin: 0 auto;
+
+    z-index: 10;
+  }
+  &__image-mobile {
+    position: absolute;
+    top: 53%;
+    right: 29%;
+
+    width: 274px;
+    height: 476px;
+
+    z-index: 15;
+  }
+}

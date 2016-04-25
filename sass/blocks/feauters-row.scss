@@ -1,0 +1,39 @@
+.feauters-row {
+  display: flex;
+  align-items: baseline;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 270px;
+
+
+  padding: 0 360px;
+  background-color: $base-btn-background;
+  &__item {
+    align-self: center;
+    width: (1/5)*100%;
+    min-height: 270px;
+
+    border-left: 1px solid #b5eae0;
+    &:last-child {
+      border-right: 1px solid #b5eae0;
+    }
+  }
+  &__count {
+    display: block;
+    width: 100%;
+
+    margin-top: 85px;
+    margin-bottom: 15px;
+
+    font-size: 72px;
+    line-height: 80px;
+    color: #ffffff;
+  }
+  &__name {
+    display: block;
+    width: 100%;
+
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+}
