@@ -1,0 +1,101 @@
+.blog-row {
+  width: 1920px;
+  min-height: 770px;
+
+  padding-top: 105px;
+  padding-bottom: 105px;
+  &__items {
+    display: flex;
+    justify-content: space-between;
+
+    width: 1200px;
+    min-height: 385px;
+
+    margin: 0 auto;
+  }
+  &__item {
+    width: 380px;
+    min-height: 385px;
+  }
+  &__image-group {
+    position: relative;
+  }
+  &__date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    left: -10px;
+
+    width: 60px;
+    height: 70px;
+
+    background-color: $base-btn-background;
+  }
+  &__day {
+    display: block;
+
+    font-size: 30px;
+    font-family: $font-bold;
+    color: #ffffff;
+  }
+  &__month {
+    display: block;
+
+    font-size: 15px;
+    font-family: $alternative-font-lightitalic;
+    color: #ffffff;
+  }
+  &__header {
+    text-align: left;
+    color: $base-header-color;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  &__description {
+    text-align: left;
+    color: $base-color;
+    font-family: $alternative-font;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  &__meta {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-end;
+    min-height: 36px;
+
+    border-top: 1px solid #e5e5e5;
+  }
+  &__views {
+    display: flex;
+    justify-content: flex-start;
+    min-width: 70px;
+    max-height: 36px;
+  }
+  &__comments {
+    display: flex;
+    justify-content: flex-start;
+    min-width: 70px;
+    max-height: 36px;
+  }
+  &__icon {
+    align-self: center;
+    width: 19px;
+    height: 14px;
+
+    margin-right: 8px;
+
+    fill: $base-btn-background;
+  }
+  &__count {
+    align-self: center;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: $alternative-font-lightitalic;
+    text-decoration: none;
+    color: $base-color;
+  }
+
+}
