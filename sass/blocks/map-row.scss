@@ -1,0 +1,46 @@
+.map-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1920;
+  min-height: 200px;
+
+  background-image: linear-gradient(to top, rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url("../img/map_bg.jpg");
+  &__pointer {
+    display: block;
+
+    margin: 0 auto;
+
+    width: 22px;
+    height: 27px;
+
+    margin-bottom: 14px;
+
+    fill: $secondary-btn-background-active;
+  }
+  &__btn {
+    position: relative;
+    display: block;
+
+    width: 145px;
+
+    margin: 0 auto;
+
+    color: $secondary-btn-background-active;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: $font-bold;
+    text-transform: uppercase;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 46px;
+      left: calc(50% - 30px);
+
+      width: 60px;
+      height: 3px;
+
+      background-color: $secondary-btn-background-active;
+    }
+  }
+}

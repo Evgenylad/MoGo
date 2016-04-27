@@ -30,7 +30,7 @@
     top: 0;
     left: 0;
 
-    min-height: 152px;
+    height: 100%;
 
     padding-left: 310px;
     padding-right: 80px;
@@ -62,16 +62,21 @@
         border: 3px solid #f38181;
       }
     }
+    &--second-group {
+      &::before {
+      left: 68px;
+
+      width: 215px;
+      height: 215px;
+
+      background-position: top;
+      border: 0;
+      border-radius: 100%;
+      }
+    }
     &--slide4 {
       min-height: 215px;
       &::before {
-        left: 68px;
-        width: 215px;
-        height: 215px;
-
-        background-position: top;
-        border: 0;
-        border-radius: 100%;
         background-image: url("../img/slider-1.png");
       }
     }

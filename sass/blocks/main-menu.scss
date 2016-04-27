@@ -1,17 +1,21 @@
 .main-menu {
   width: 620px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+
   &__list {
-    width: 540px;
+    width: 500px;
     display: flex;
-    justify-content: space-around;
+
+    padding: 0;
 
     list-style: none;
   }
   &__item {
     display: inline-block;
     width: calc(540px/5);
+
+    text-align: left;
   }
   &__link {
     text-transform: uppercase;
@@ -25,8 +29,4 @@
       border-bottom: 3px solid #fce38a;
     }
   }
-}
-
-.main-menu__link:hover > .main-menu__img {
-  fill: #fce38a;
 }
