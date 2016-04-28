@@ -1,0 +1,40 @@
+.footer-instagram {
+  display: flex;
+  flex-direction: column;
+
+  width: (275/1200)*100%;
+  &__images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+    width: 268px;
+    height: 268px;
+
+    margin-bottom: 14px;
+  }
+  &__image {
+    background-color: #000000;
+    width: 88px;
+    height: 88px;
+  }
+  &__header {
+    margin: 0;
+    margin-bottom: 36px;
+
+    font-family: $font;
+    color: $base-header-color;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  &__link {
+    color: $base-color;
+    font-family: $alternative-font-lightitalic;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: left;
+    text-decoration: none;
+  }
+}

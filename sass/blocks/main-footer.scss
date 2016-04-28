@@ -1,8 +1,13 @@
 .main-footer {
   width: 1920px;
-  min-width: 560px;
+  min-height: 500px;
+
+  padding-top: 70px;
   &__wrapper {
-    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    width: (1200/1920)*100%;
+    min-height: 500px;
 
     margin: 0 auto;
   }
