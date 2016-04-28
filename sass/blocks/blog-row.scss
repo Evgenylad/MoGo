@@ -1,5 +1,5 @@
 .blog-row {
-  width: 1920px;
+  width: 100%;
   min-height: 770px;
 
   padding-top: 105px;
@@ -12,6 +12,7 @@
     min-height: 385px;
 
     margin: 0 auto;
+    padding: 0 15px;
   }
   &__item {
     width: 380px;

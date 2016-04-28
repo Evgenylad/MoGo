@@ -6,6 +6,8 @@
   padding-top: 105px;
 
   background-image: linear-gradient(to top, rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url("../img/adaptive_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 
   &__image-tablet {
     display: block;

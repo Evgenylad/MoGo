@@ -1,13 +1,18 @@
 .feauters-row {
-  display: flex;
-  align-items: baseline;
   box-sizing: border-box;
+
   width: 100%;
   min-height: 270px;
 
-
-  padding: 0 360px;
   background-color: $base-btn-background;
+  &__items {
+    display: flex;
+    align-items: baseline;
+
+    width: 1200px;
+
+    margin: 0 auto;
+  }
   &__item {
     align-self: center;
     width: (1/5)*100%;
