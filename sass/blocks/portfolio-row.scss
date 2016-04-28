@@ -18,3 +18,16 @@
     display: none;
   }
 }
+
+@media (max-width: 1919px) {
+  .portfolio-row {
+    &__item-group {
+      &--sixth {
+        display: none;
+      }
+      &--seventh {
+        display: none;
+      }
+    }
+  }
+}
