@@ -3,6 +3,8 @@
   min-height: 500px;
 
   padding-top: 70px;
+
+  background-color: $secondary-background;
   &__wrapper {
     display: flex;
     justify-content: space-between;

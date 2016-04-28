@@ -24,6 +24,13 @@ module.exports = function(grunt) {
           src: ["*.html"],
           dest: "build"
         }]
+      },
+      css: {
+        files: [{
+          expand: true,
+          src: ["css/*.css"],
+          dest: "build"
+        }]
       }
     },
 
@@ -125,8 +132,15 @@ module.exports = function(grunt) {
 
     watch: {
       html: {
-        files: ["*.{html,css}"],
+        files: ["*.html"],
         tasks: ["copy:html"],
+        option: {
+          spawn: false
+        }
+      },
+      css: {
+        files: ["css/*.css"],
+        tasks: ["copy:css"],
         option: {
           spawn: false
         }

@@ -19,7 +19,6 @@
     margin-bottom: 40px;
 
     font-size: 15px;
-    line-height: 24px;
     font-family: $alternative-font;
     color: #b4b4b4;
     text-align: left;
@@ -31,13 +30,54 @@
     margin-right: 30px;
     padding-bottom: 16px;
 
+    line-height: 14px;
+    color: $base-header-color;
     border-bottom: 1px solid #e5e5e5;
   }
   &__followers-count {
+    align-self: flex-end;
     margin-right: 2px;
 
     font-size: 18px;
     font-family: $font-bold;
-    color: $base-header-color;
   }
+  &__input-group {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__input {
+    width: 230px;
+    height: 40px;
+
+    padding-left: 15px;
+
+    border: 1px solid #e7e7e7;
+  }
+  &__label {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+
+    font-family: $alternative-font-lightitalic;
+  }
+  &__btn {
+    width: 150px;
+
+    padding: 0;
+
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 0;
+    background-color: $base-btn-background;
+  }
+}
+
+.stay-connected__input:focus ~ .stay-connected__label {
+  display: none;
+}
+
+.stay-connected__input:valid ~ .stay-connected__label {
+  display: none;
 }

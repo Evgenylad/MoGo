@@ -21,5 +21,10 @@
       color: #fce38a;
       border-bottom: 3px solid #fce38a;
     }
+    &:focus {
+      text-decoration: none;
+      color: $secondary-btn-background;
+      outline: none;
+    }
   }
 }

@@ -4924,6 +4924,9 @@ body {
     .main-header__btn:hover {
       color: #f38181;
       border: 3px solid #f38181; }
+    .main-header__btn:focus {
+      color: #f38181;
+      border: 3px solid #f38181; }
 
 .header-slogan {
   position: relative;
@@ -4971,6 +4974,10 @@ body {
       text-decoration: none;
       color: #fce38a;
       border-bottom: 3px solid #fce38a; }
+    .main-nav__link:focus {
+      text-decoration: none;
+      color: #fce38a;
+      outline: none; }
 
 .main-menu {
   width: 620px;
@@ -5003,6 +5010,10 @@ body {
       text-decoration: none;
       color: #fce38a;
       border-bottom: 3px solid #fce38a; }
+    .main-menu__link:focus {
+      text-decoration: none;
+      color: #fce38a;
+      outline: none; }
 
 .user-menu {
   display: -webkit-box;
@@ -5985,6 +5996,12 @@ body {
     line-height: 30px;
     font-family: "Montserrat Bold", "Tahoma", sans-serif;
     text-transform: uppercase; }
+    .map-row__btn:hover {
+      text-decoration: none;
+      color: #ea2424; }
+    .map-row__btn:visited {
+      text-decoration: none;
+      color: #ea2424; }
     .map-row__btn::after {
       content: "";
       position: absolute;
@@ -5997,7 +6014,8 @@ body {
 .main-footer {
   width: 1920px;
   min-height: 500px;
-  padding-top: 70px; }
+  padding-top: 70px;
+  background-color: #f8f8f8; }
   .main-footer__wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -6156,7 +6174,6 @@ body {
     margin: 0;
     margin-bottom: 40px;
     font-size: 15px;
-    line-height: 24px;
     font-family: "Roboto Regular", "Tahoma", sans-serif;
     color: #b4b4b4;
     text-align: left; }
@@ -6171,12 +6188,50 @@ body {
             justify-content: flex-start;
     margin-right: 30px;
     padding-bottom: 16px;
+    line-height: 14px;
+    color: #333333;
     border-bottom: 1px solid #e5e5e5; }
   .stay-connected__followers-count {
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
     margin-right: 2px;
     font-size: 18px;
-    font-family: "Montserrat Bold", "Tahoma", sans-serif;
-    color: #333333; }
+    font-family: "Montserrat Bold", "Tahoma", sans-serif; }
+  .stay-connected__input-group {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .stay-connected__input {
+    width: 230px;
+    height: 40px;
+    padding-left: 15px;
+    border: 1px solid #e7e7e7; }
+  .stay-connected__label {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-family: "Roboto Lightitalic", "Tahoma", sans-serif; }
+  .stay-connected__btn {
+    width: 150px;
+    padding: 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 0;
+    background-color: #95e1d3; }
+
+.stay-connected__input:focus ~ .stay-connected__label {
+  display: none; }
+
+.stay-connected__input:valid ~ .stay-connected__label {
+  display: none; }
 
 .footer-social {
   display: -webkit-box;

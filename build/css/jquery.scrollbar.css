@@ -119,6 +119,7 @@
 .scrollbar-inner > .scroll-element .scroll-element_track,
 .scrollbar-inner > .scroll-element .scroll-bar {
     border-radius: 8px;
+    height: 60%; 
 }
 
 .scrollbar-inner > .scroll-element .scroll-element_track,
