@@ -19,5 +19,12 @@
     text-decoration: none;
     border: 3px solid #ffffff;
     border-radius: 0;
+    &:hover {
+        color: $secondary-btn-background-active;
+        border: 3px solid $secondary-btn-background-active;
+
+
+
+    }
   }
 }

@@ -124,3 +124,7 @@
 
   background: url("../img/icons/arrow_up.png") no-repeat;
 }
+
+.services-repeat-row__input:checked ~ .services-repeat-row__description > .scroll-wrapper > .scroll-y {
+  display: block;
+}

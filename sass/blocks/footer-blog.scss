@@ -26,17 +26,20 @@
 
     margin-right: 20px;
   }
-  &__item {
+  &__link {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    &:hover {
+      text-decoration: none;
+    }
   }
   &__description {
     max-width: 208px;
 
     margin: 0;
     margin-top: 15px;
-    
+
     text-align: left;
     font-size: 12px;
     line-height: 18px;
@@ -50,4 +53,8 @@
     color: $base-color;
     font-family: $alternative-font-lightitalic;
   }
+}
+
+.footer-blog__link:hover > .footer-blog__description {
+  color: $secondary-btn-background-active;
 }

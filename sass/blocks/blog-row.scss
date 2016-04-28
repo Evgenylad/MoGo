@@ -73,12 +73,18 @@
     justify-content: flex-start;
     min-width: 70px;
     max-height: 36px;
+    &:hover {
+      text-decoration: none;
+    }
   }
   &__comments {
     display: flex;
     justify-content: flex-start;
     min-width: 70px;
     max-height: 36px;
+    &:hover {
+      text-decoration: none;
+    }
   }
   &__icon {
     align-self: center;
@@ -97,5 +103,9 @@
     text-decoration: none;
     color: $base-color;
   }
+}
 
+.blog-row__views:hover > .blog-row__count,
+.blog-row__comments:hover > .blog-row__count {
+  color: $secondary-btn-background-active;
 }

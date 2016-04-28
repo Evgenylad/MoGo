@@ -124,7 +124,7 @@ module.exports = function(grunt) {
 
     watch: {
       html: {
-        files: ["*.html"],
+        files: ["*.{html,css}"],
         tasks: ["copy:html"],
         option: {
           spawn: false

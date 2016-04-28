@@ -28,3 +28,7 @@
     fill: $base-btn-background;
   }
 }
+
+.footer-social__link:hover > .footer-social__icon {
+  fill: $secondary-btn-background-active;
+}
