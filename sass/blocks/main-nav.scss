@@ -9,22 +9,8 @@
   &__item {
     width: 40%;
     text-align: left;
-  }
-  &__link {
     color: #ffffff;
     font-family: $font-bold;
     font-size: 30px;
-    &:hover {
-      padding-bottom: 8px;
-
-      text-decoration: none;
-      color: #fce38a;
-      border-bottom: 3px solid #fce38a;
-    }
-    &:focus {
-      text-decoration: none;
-      color: $secondary-btn-background;
-      outline: none;
-    }
   }
 }

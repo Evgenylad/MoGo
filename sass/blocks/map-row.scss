@@ -31,11 +31,15 @@
     line-height: 30px;
     font-family: $font-bold;
     text-transform: uppercase;
-    &:hover {
-      text-decoration: none;
-      color: darken($secondary-btn-background-active, 20%);
-    }
+
     &:visited {
+      text-decoration: none;
+      color: $secondary-btn-background-active;
+    }
+    &:active {
+      text-decoration: none;
+    }
+    &:hover {
       text-decoration: none;
       color: darken($secondary-btn-background-active, 20%);
     }
